@@ -1,0 +1,14 @@
+\section{Technológiai ismertetés}
+A Henkel telephelyeken világszerte több mint 4000 fizikai és virtuális szenzort használtak fel, amivel a gépeik és létesítményeik áram, fosszilis energiahordozó, sűrített levegő és szennyvíz felhasználását, de még az külső időjárási körülményeket is mérik. Ezek a szenzorok egy globális EMS rendszerben jelentenek, aminek köszönhetően a telephelyek valós időben, egymással megosztva a legjobb elérhető megtakarítási stratégiákat valós időben javulhat az energiafelhasználás. 
+\subsection{Adatfeldolgozás}
+Ebben a Henkel egy külső cég, az AVEVA rendszereit használja fel\cite{AVEVA2021}, amit a cég saját maga tart  üzemben, belsős hálozaton. Ennek a központi EMS rendszernek továbbítja az összes telephely összes berendezése a szenzoradatot, így egy nagy egyesített adatbázis jön létre. Az EMS rendszer egy nagy egyesített adatbázis, ami egyesíti az egymással inkompatibilis rendszerekből származó adatpontokat. Így a Henkelnél naponta több, mint egymillió adatpontot rögzítenek, aminek elemzésével a vállalat optimalizálja a termelési folyamatokat.
+
+A Henkel kifejlesztett egy platform-független megoldás, aminek segítségével bármilyen jelenlegi vagy jövőbeni rendszert integrálhatnak az új rendszerbe. Ezt a megoldást a Henkelnél a Digital Backbone (Digitális hátgerinc) rendszernek keresztelte el, fő célljának a folyamatos fejleszthetőségét, és bővíthetőségét jelölte meg.
+A beépített szenzoroknak és a digitális hátgerin együttes használatával vizsgálhatjuk a felhasznált erőforrások mértékét a gépek termelési adataival együtt, értékes összefüggéseket felfedve.
+\subsection{Elért eredmények}
+Az új MES és EMS rendszerek bevezetésével a Henkel körülbelül 35 millió Euró megtakarítást ért el a rendszerek bevezetése óta eltelt 7 évben (2013-2020), és a gépeik hatékonysági mutatója (OEE\%) 15\%-ot növekedett, így a teljes megtérülés kevesebb, mint 4 év alatt bekövetkezett \cite{AVEVA2021}.
+
+\subsection*{Saját elemzés}
+
+A továbbiakban a Henkel és az AVEVA által közzétett anyag alapján fogom azonosítani és elemezni különböző események kockázatszintjét. A kockázatelemzés a következő szerint fogom számítani, és az alapján kategorizálom az azonosított kockázatokat
+\begin{equation} R = P \times I \end{equation} ahol $P \in \{1, 2, 3, 4, 5\}$ a bekövetkezési valószínűség (Probability), $I \in \{1, 2, 3, 4, 5\}$ pedig a súlyosság/hatás (Impact) mértéke. A kockázati pontszám alapján az alábbi kategóriákat különítjük el: \begin{itemize} \item \textbf{Alacsony kockázat (1--5):} Elfogadható szint, időszakos ellenőrzés szükséges. \item \textbf{Közepes kockázat (6--12):} Kontrollok és folytonos monitorozás kötelező. \item \textbf{Magas / Kritikus kockázat (15--25):} Azonnali technikai és szervezeti beavatkozást igényel. \end{itemize}

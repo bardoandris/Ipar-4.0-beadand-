@@ -7,7 +7,7 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{olplainarticle}[06/12/2015, v1.0]
 \RequirePackage[utf8]{inputenc}
-\RequirePackage[english]{babel}
+\RequirePackage[hungarian]{babel}
 
 \RequirePackage{ifthen}
 \RequirePackage{calc}
@@ -40,9 +40,7 @@
                 labelsep=period,%
                 justification=raggedright]{caption}
                 
-\RequirePackage{natbib}
-\bibliographystyle{apalike}
-         
+\RequirePackage{biblatex}         
 %
 % headers and footers
 %
@@ -171,7 +169,6 @@ THE ABSTRACT\vskip12pt}\let\go\relax\fi
 \noindent
 \parbox{\dimexpr\linewidth-2\fboxsep\relax}{%
 \if@reqslineno\internallinenumbers\fi%
-{\color{color1}\keywordname\hspace*{1em}} \@keywords%
 }%
 }%
 \vskip25pt%
